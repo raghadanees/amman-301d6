@@ -27,10 +27,10 @@ function Product(name) {
 function makeRandom() {
   return Math.floor(Math.random() * names.length);
 }
-// let rando = '';
+let rando = '';
 function displayPics(){
   while(viewed.length < 6){
-    const rando = makeRandom();
+     rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
